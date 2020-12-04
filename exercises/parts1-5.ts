@@ -4,7 +4,7 @@
 
 // Part 1: Declare (5) Variables With Type
 
-
+import { SpaceLocation } from './SpaceLocation'; 
 //let spaceCraftName: string = "Determination";
 //let speedMph: number = 17500;
 let kilometersToMars: number = 225000000;
@@ -78,7 +78,7 @@ let spaceShuttle = new Spacecraft('Determination', 17500);
 // Part 5: Export and Import the SpaceLocation Class
 // Add the required import statement BEFORE the part 1 concent.
 
-import { SpaceLocation } from './SpaceLocation'; 
+
 
 // Add the printDaysToLocation function to the Spacecraft class.
 spaceShuttle.printDaysToLocation(new SpaceLocation('Mars', kilometersToMars));
