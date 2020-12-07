@@ -18,14 +18,21 @@ export class Rocket {
         let sum:number = 0;
         for(let i: number = 0; i<items.length; i++){
             sum += items[i].massKg;
+        //for(let item of items){
+            //sum +=item.massCargo;
+        //}
         }
         return sum;
 
     }
        
     currentMassKg(): number {
-        return this.sumMass(this.astronauts)+this.sumMass(this.cargoItems);
-        
+        //not correct =>return this.sumMass(this.astronauts)+this.sumMass(this.cargoItems);
+        let total: number = 0;
+        total += this.sumMass(this.astronauts);
+        total += this.sumMass(this.cargoItems);
+
+        return total;    
     }
 
     canAdd(item: Payload): boolean{
